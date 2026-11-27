@@ -1,2 +1,1 @@
-pref("enable", true);
-pref("input", "This is input");
+// No custom preferences required; uses Zotero's baseAttachmentPath.

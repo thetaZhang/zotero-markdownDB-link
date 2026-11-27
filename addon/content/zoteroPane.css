@@ -1,3 +1,6 @@
-.makeItRed {
-  background-color: tomato;
+#__addonRef__-toolbar-sync {
+  list-style-image: url("chrome://__addonRef__/content/icons/sync-md.svg");
+  -moz-context-properties: fill, stroke;
+  fill: currentColor;
+  stroke: currentColor;
 }

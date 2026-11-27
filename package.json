@@ -1,24 +1,24 @@
 {
-  "name": "zotero-plugin-template",
+  "name": "zotero-markdowndb-link",
   "type": "module",
-  "version": "3.1.0",
-  "description": "Zotero Plugin Template",
+  "version": "0.1.0",
+  "description": "Scan linked attachment base directory and link <CiteKey>/<CiteKey>.md files to matching Zotero items.",
   "config": {
-    "addonName": "Zotero Plugin Template",
-    "addonID": "addontemplate@euclpts.com",
-    "addonRef": "addontemplate",
-    "addonInstance": "AddonTemplate",
-    "prefsPrefix": "extensions.zotero.addontemplate"
+    "addonName": "Zotero MarkdownDB Link",
+    "addonID": "zotero-markdowndb-link@thetaZhang.github.io",
+    "addonRef": "markdowndblink",
+    "addonInstance": "MarkdownDBLink",
+    "prefsPrefix": "extensions.zotero.markdowndblink"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/windingwind/zotero-plugin-template.git"
+    "url": "git+https://github.com/thetaZhang/zotero-markdownDB-link.git"
   },
-  "author": "windingwind",
+  "author": "thetaZhang",
   "bugs": {
-    "url": "https://github.com/windingwind/zotero-plugin-template/issues"
+    "url": "https://github.com/thetaZhang/zotero-markdownDB-link/issues"
   },
-  "homepage": "https://github.com/windingwind/zotero-plugin-template#readme",
+  "homepage": "https://github.com/thetaZhang/zotero-markdownDB-link#readme",
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "start": "zotero-plugin serve",

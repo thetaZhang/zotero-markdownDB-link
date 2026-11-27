@@ -1,7 +1,10 @@
-startup-begin = 插件加载中
-startup-finish = 插件已就绪
-prefs-title = 插件模板
-prefs-table-title = 标题
-prefs-table-detail = 详情
-tabpanel-lib-tab-label = 库标签
-tabpanel-reader-tab-label = 阅读器标签
+sync-already-running = Markdown 链接同步正在运行中。
+sync-start = 正在开始同步 Markdown 链接...
+sync-scanning = 正在扫描链接附件根目录...
+sync-indexing = 正在索引文库引用键 (CiteKey)...
+sync-linking = 正在链接 Markdown 文件 ({$current}/{$total})...
+sync-no-base-dir = Zotero 设置中尚未配置“链接附件根目录”。
+sync-base-dir-missing = 链接附件根目录不存在：{$path}
+sync-summary = 同步完成：新链接 {$linked} 个，已存在 {$skipped} 个，未匹配 {$unmatched} 个。
+sync-summary-with-errors = 同步完成（有错误）：新链接 {$linked} 个，已存在 {$skipped} 个，未匹配 {$unmatched} 个，失败 {$failed} 个。
+sync-error = 同步失败：{$error}

@@ -1,7 +1,10 @@
-startup-begin = Addon is loading
-startup-finish = Addon is ready
-prefs-title = Template
-prefs-table-title = Title
-prefs-table-detail = Detail
-tabpanel-lib-tab-label = Lib Tab
-tabpanel-reader-tab-label = Reader Tab
+sync-already-running = Markdown link sync is already running.
+sync-start = Starting Markdown link sync...
+sync-scanning = Scanning linked attachment base directory...
+sync-indexing = Indexing library citation keys...
+sync-linking = Linking Markdown files ({$current}/{$total})...
+sync-no-base-dir = Linked Attachment Base Directory is not configured in Zotero settings.
+sync-base-dir-missing = Linked Attachment Base Directory does not exist: {$path}
+sync-summary = Sync complete: {$linked} linked, {$skipped} already linked, {$unmatched} unmatched.
+sync-summary-with-errors = Sync complete with errors: {$linked} linked, {$skipped} already linked, {$unmatched} unmatched, {$failed} failed.
+sync-error = Sync failed: {$error}
