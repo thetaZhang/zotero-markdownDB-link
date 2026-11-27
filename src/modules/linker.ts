@@ -208,7 +208,7 @@ function reportProgress(
   }
 }
 
-async function getBaseAttachmentDir(): Promise<
+export async function getBaseAttachmentDir(): Promise<
   | { ok: true; baseDir: string }
   | { ok: false; status: "no-base-dir" | "base-dir-missing"; baseDir?: string }
 > {
@@ -231,7 +231,7 @@ async function getBaseAttachmentDir(): Promise<
   return { ok: false, status: "base-dir-missing", baseDir };
 }
 
-function isCaseInsensitiveOS(): boolean {
+export function isCaseInsensitiveOS(): boolean {
   return Boolean(Zotero.isWin || Zotero.isMac);
 }
 
@@ -329,7 +329,7 @@ async function scanMarkdownFiles(
   return candidates;
 }
 
-function getItemCitationKey(item: Zotero.Item): string | null {
+export function getItemCitationKey(item: Zotero.Item): string | null {
   try {
     const nativeKey = item.getField("citationKey" as any) as unknown;
     if (typeof nativeKey === "string" && nativeKey.trim()) {
@@ -366,7 +366,7 @@ async function buildLibraryCiteKeyLookup(
   return buildCiteKeyLookup(entries);
 }
 
-async function isAlreadyLinked(
+export async function isAlreadyLinked(
   parentItem: Zotero.Item,
   targetFilePath: string,
   caseInsensitive: boolean,

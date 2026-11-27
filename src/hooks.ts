@@ -1,7 +1,11 @@
+import { stopActiveMinerUServer } from "./modules/mineru";
 import {
+  onPrefsLoad,
   registerMenu,
+  registerPreferencePane,
   registerWindowUI,
   unregisterMenu,
+  unregisterPreferencePane,
   unregisterWindowUI,
 } from "./modules/ui";
 import { initLocale } from "./utils/locale";
@@ -15,6 +19,7 @@ async function onStartup(): Promise<void> {
 
   initLocale();
   registerMenu();
+  await registerPreferencePane();
 
   await Promise.all(
     Zotero.getMainWindows().map((win) => onMainWindowLoad(win)),
@@ -33,7 +38,9 @@ async function onMainWindowUnload(win: Window): Promise<void> {
   unregisterWindowUI(win);
 }
 
-function onShutdown(): void {
+async function onShutdown(): Promise<void> {
+  await stopActiveMinerUServer();
+  unregisterPreferencePane();
   unregisterMenu();
   Zotero.getMainWindows().forEach(unregisterWindowUI);
   ztoolkit.unregisterAll();
@@ -43,9 +50,15 @@ function onShutdown(): void {
   delete Zotero[addon.data.config.addonInstance];
 }
 
+async function onAppShutdown(): Promise<void> {
+  await stopActiveMinerUServer();
+}
+
 export default {
   onStartup,
   onShutdown,
+  onAppShutdown,
   onMainWindowLoad,
   onMainWindowUnload,
+  onPrefsLoad,
 };

@@ -4,3 +4,14 @@
   fill: currentColor;
   stroke: currentColor;
 }
+
+#__addonRef__-toolbar-parse {
+  list-style-image: url("chrome://__addonRef__/content/icons/parse-pdf.svg");
+  -moz-context-properties: fill, stroke;
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+#__addonRef__-toolbar-parse.running {
+  opacity: 0.65;
+}

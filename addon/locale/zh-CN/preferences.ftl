@@ -1,0 +1,14 @@
+pref-mineru-heading = MinerU PDF 解析设置
+pref-mineru-tier-label = 解析精度等级：
+pref-mineru-tier-flash = Flash（极速）
+pref-mineru-tier-basic = Basic（基础）
+pref-mineru-tier-standard = Standard（标准）
+pref-mineru-tier-advanced = Advanced（高级）
+pref-mineru-overwrite = 覆盖已存在的 Markdown 输出文件
+pref-mineru-path-label = MinerU 可执行文件路径：
+pref-mineru-path-input =
+    .placeholder = 留空则自动探测 mineru-kit
+pref-mineru-path-browse = 浏览...
+pref-mineru-path-hint = 可选。指定 mineru-kit 可执行文件的完整路径；留空时将自动探测常见路径（如 ~/.local/bin/mineru-kit）与系统 PATH。
+pref-mineru-timeout-label = 单文件解析超时（秒）：
+pref-mineru-timeout-hint = 允许范围 30–3600 秒（默认 300 秒）。

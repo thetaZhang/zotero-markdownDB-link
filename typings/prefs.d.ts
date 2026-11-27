@@ -7,7 +7,10 @@
 declare namespace _ZoteroTypes {
   interface Prefs {
     PluginPrefsMap: {
-      
+      "mineruTier": string;
+      "mineruOverwrite": boolean;
+      "mineruPath": string;
+      "mineruTimeout": number;
     };
   }
 }

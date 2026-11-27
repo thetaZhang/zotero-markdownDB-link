@@ -1,0 +1,50 @@
+#__addonRef__-prefpane {
+  padding: 4px 0;
+  color: inherit;
+}
+
+#__addonRef__-prefpane groupbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#__addonRef__-prefpane h2 {
+  margin: 0 0 4px 0;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#__addonRef__-prefpane .pref-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+#__addonRef__-prefpane .pref-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#__addonRef__-prefpane .pref-path-row {
+  width: 100%;
+}
+
+#__addonRef__-pref-path {
+  flex: 1;
+  min-width: 0;
+}
+
+#__addonRef__-pref-timeout {
+  width: 96px;
+}
+
+#__addonRef__-prefpane .pref-hint {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: var(--fill-secondary, inherit);
+  opacity: 0.78;
+}

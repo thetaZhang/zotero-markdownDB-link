@@ -1,0 +1,97 @@
+<vbox
+  id="__addonRef__-prefpane"
+  onload="Zotero.__addonInstance__?.hooks.onPrefsLoad?.(window)"
+>
+  <linkset>
+    <html:link rel="localization" href="__addonRef__-preferences.ftl" />
+  </linkset>
+  <groupbox>
+    <label>
+      <html:h2 data-l10n-id="__addonRef__-pref-mineru-heading"></html:h2>
+    </label>
+
+    <hbox align="center" class="pref-row">
+      <label
+        control="__addonRef__-pref-tier"
+        data-l10n-id="__addonRef__-pref-mineru-tier-label"
+      />
+      <menulist
+        id="__addonRef__-pref-tier"
+        native="true"
+        preference="__prefsPrefix__.mineruTier"
+      >
+        <menupopup>
+          <menuitem
+            value="flash"
+            data-l10n-id="__addonRef__-pref-mineru-tier-flash"
+          />
+          <menuitem
+            value="basic"
+            data-l10n-id="__addonRef__-pref-mineru-tier-basic"
+          />
+          <menuitem
+            value="standard"
+            data-l10n-id="__addonRef__-pref-mineru-tier-standard"
+          />
+          <menuitem
+            value="advanced"
+            data-l10n-id="__addonRef__-pref-mineru-tier-advanced"
+          />
+        </menupopup>
+      </menulist>
+    </hbox>
+
+    <hbox align="center" class="pref-row">
+      <checkbox
+        id="__addonRef__-pref-overwrite"
+        native="true"
+        preference="__prefsPrefix__.mineruOverwrite"
+        data-l10n-id="__addonRef__-pref-mineru-overwrite"
+      />
+    </hbox>
+
+    <vbox class="pref-section">
+      <label
+        control="__addonRef__-pref-path"
+        data-l10n-id="__addonRef__-pref-mineru-path-label"
+      />
+      <hbox align="center" class="pref-row pref-path-row">
+        <html:input
+          id="__addonRef__-pref-path"
+          type="text"
+          preference="__prefsPrefix__.mineruPath"
+          data-l10n-id="__addonRef__-pref-mineru-path-input"
+        />
+        <button
+          id="__addonRef__-pref-path-browse"
+          data-l10n-id="__addonRef__-pref-mineru-path-browse"
+        />
+      </hbox>
+      <description
+        class="pref-hint"
+        data-l10n-id="__addonRef__-pref-mineru-path-hint"
+      />
+    </vbox>
+
+    <vbox class="pref-section">
+      <hbox align="center" class="pref-row">
+        <label
+          control="__addonRef__-pref-timeout"
+          data-l10n-id="__addonRef__-pref-mineru-timeout-label"
+        />
+        <html:input
+          id="__addonRef__-pref-timeout"
+          type="number"
+          min="30"
+          max="3600"
+          step="10"
+          data-preference="__prefsPrefix__.mineruTimeout"
+        />
+      </hbox>
+      <description
+        class="pref-hint"
+        data-l10n-id="__addonRef__-pref-mineru-timeout-hint"
+      />
+    </vbox>
+  </groupbox>
+</vbox>

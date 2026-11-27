@@ -1,0 +1,14 @@
+pref-mineru-heading = MinerU PDF Parsing
+pref-mineru-tier-label = Parse tier:
+pref-mineru-tier-flash = Flash
+pref-mineru-tier-basic = Basic
+pref-mineru-tier-standard = Standard
+pref-mineru-tier-advanced = Advanced
+pref-mineru-overwrite = Overwrite existing Markdown output files
+pref-mineru-path-label = MinerU executable path:
+pref-mineru-path-input =
+    .placeholder = Leave blank to auto-detect mineru-kit
+pref-mineru-path-browse = Browse...
+pref-mineru-path-hint = Optional. Full path to the mineru-kit executable; when empty, it is auto-detected from standard locations (such as ~/.local/bin/mineru-kit) and PATH.
+pref-mineru-timeout-label = Per-file parse timeout (seconds):
+pref-mineru-timeout-hint = Valid range: 30–3600 seconds (default: 300).
